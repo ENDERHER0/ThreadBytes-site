@@ -1,0 +1,47 @@
+:root {
+    --main-color: #0ac21cb4;
+    --header-color: black;
+    --body-color: #2c2b2b;
+    --main-font: 'Roboto', sans-serif;
+}
+body {
+    background-color: var(--body-color);
+    color: var(--main-color);
+    font: 14pt var(--main-font);
+    margin: auto;
+}
+header {
+    background-color: var(--header-color);
+    padding: 0;
+}
+/* Navigation Bar */
+ul[id="nav-bar"] {
+    display: inline-flex;
+    justify-content: space-between;
+    border: solid 3px white;
+    padding: 5px 20px;
+    margin: 5px 30vw;
+    width: -moz-max-content;
+    width: max-content;
+}
+/* Navigation Bar List Boxes */
+ul[id="nav-bar"] li {
+    border: solid 2px white;
+    width: -moz-max-content;
+    width: max-content;
+    padding: 20px 30px;
+    margin: 5px 20px;
+    text-decoration: none;
+}
+/* Navigation Bar List Item */
+ul[id="nav-bar"] li a {
+    border: solid 1px white;
+    color: var(--main-color);
+    padding: auto;
+}
+/* New Apps */
+nav[id="new-apps"] {
+    border: solid 1px white;
+    width: 20vw;
+    margin: 5px 15vw;
+}
