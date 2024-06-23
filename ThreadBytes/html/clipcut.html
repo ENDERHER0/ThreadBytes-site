@@ -3,38 +3,84 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Embedded Python Script</title>
+<title>Display Python Script with Prism.js</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
 <style>
     body {
         background-color: black;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 20px 10px 0px 10px;
     }
-    div {
-        font-size: 20pt;
+    span[id="home"] a {
+        padding: 5px 20px;
+        font-size: 30px;
+        font-weight: 800;
+        color: green;
+        text-decoration: none;
     }
-    #python-window {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 400px;
-        height: 300px;
-        border: 2px solid black;
-        background-color: #f0f0f0;
-        overflow: hidden;
+    h1 {
+        font-size: 2em;
     }
-    iframe {
-        width: 100%;
-        height: 100%;
-        border: none;
+    #python-script {
+        position: relative;
+        top: -50px;
+        left: -50px;
+        background-color: #272822;
+        color: #f8f8f2;
+        padding: 5px;
+        margin: 10vw;
+        border-radius: 5px;
+        white-space: pre-wrap; /* Preserve formatting and wrap long lines */
+        overflow-x: auto; /* Enable horizontal scroll if needed */
+    }
+    .license {
+        padding: 5px 20px 50px 20px;
     }
 </style>
 </head>
 <body>
-    <div>
-        <span id="home"><a title="home" href="../index.html">Home</span>
+    <span id="home"><a href="../index.html">Home</a></span>
+    <h1>ClipCut</h1>
+
+    <div id="python-script">
+        <pre><code id="python-code" class="language-python"></code></pre>
     </div>
-<div id="python-window">
-    <iframe title="ClipCutWindow" src="../scripts/python/ClipCutter.py"></iframe>
-</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
+    <script>
+        // Fetch the content of the Python script and insert it into the <code> block
+        fetch('../scripts/python/clipcut-frame.py')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('python-code').textContent = data;
+                Prism.highlightElement(document.getElementById('python-code'));
+            })
+            .catch(error => {
+                console.error('Error fetching the Python script:', error);
+                document.getElementById('python-code').textContent = 'Error fetching the Python script. Please try again later.';
+            });
+    </script>
+    <details class="license">
+        <summary>GPL-3.0 License</summary>
+        <p>
+            This program is free software: you can redistribute it and/or modify
+            it under the terms of the GNU General Public License as published by
+            the Free Software Foundation, either version 3 of the License, or
+            (at your option) any later version.
+        </p>
+        <p>
+            This program is distributed in the hope that it will be useful,
+            but WITHOUT ANY WARRANTY; without even the implied warranty of
+            MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+            General Public License for more details.
+        </p>
+        <p>
+            You should have received a copy of the GNU General Public License
+            along with this program. If not, see
+            <a href="https://www.gnu.org/licenses/gpl.html">https://www.gnu.org/licenses/gpl.html</a>.
+        </p>
+    </details>
 </body>
 </html>
