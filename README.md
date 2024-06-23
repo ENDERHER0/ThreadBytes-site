@@ -1,16 +1,19 @@
-# ClipCut
-An application for transforming a Youtube video into an array of equal shorts.
+# Welcome to My Personal Website!
 
-Let both .py files remain in the same top folder and run: python clipcut.py.# ClipCut
+## About Me
 
-ClipCut is a handy application designed to transform a YouTube video into an array of equal shorts. This application allows users to efficiently split a video into smaller parts, making it easier to manage and share specific segments.
+Welcome to my personal website! I'm thrilled to share my passion for technology and mini apps with you. As you explore this repository, you'll find a collection of tech-related articles, reviews, and how-to guides that I've personally created.
 
-To use ClipCut, simply ensure that both .py files remain in the same top folder and run the following command in your terminal:
+## ThreadBytes
 
-```
-python clipcut.py
-```
+Explore the latest content on ThreadBytes, where I share in-depth articles, product reviews, and how-to guides on various tech topics.
 
-Once executed, ClipCut will begin processing the YouTube video and generate shorter segments as per your specifications. This can be useful for various purposes such as creating highlights, sharing specific content, or organizing videos into manageable chunks.
+## Mini Apps
 
-With ClipCut, managing and utilizing YouTube videos becomes a seamless and streamlined process. Whether you're a content creator, educator, or simply a YouTube enthusiast, ClipCut provides a practical solution for working with video content.
+Don't forget to explore the mini apps section, where you can discover and try out some fun and useful applications that I've personally developed.
+
+## Contact
+
+If you have any questions or just want to say hello, feel free to contact me at [wachtelfabrication@gmail.com](mailto:wachtelfabrication@gmail.com).
+
+Thank you for taking the time to visit my personal website. I hope you find everything here interesting and valuable. Be sure to check out the live version of the website to see the self-made tech and mini apps in action!
