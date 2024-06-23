@@ -1,7 +1,7 @@
 :root {
     --main-color: #0ac21cb4;
     --header-color: black;
-    --body-color: #2c2b2b;
+    --body-color: #3d3d3d;
     --main-font: 'Roboto', sans-serif;
 }
 body {
@@ -43,5 +43,6 @@ ul[id="nav-bar"] li a {
 nav[id="new-apps"] {
     border: solid 1px white;
     width: 20vw;
+    height: 50vh;
     margin: 5px 15vw;
 }

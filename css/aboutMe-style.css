@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+}
+section[id="json-about-me"] {
+    position: relative;
+    border: 2px solid transparent; /* Start with a transparent border */
+    border-radius: 15px;
+    background-color: rgba(33, 35, 38, 0.878);
+    display: flex;
+    justify-content: left; 
+    width: auto;
+    margin: 5px;
+    color: green;
+    font-size: 0.9vw;
+    animation: border-animation 2s linear infinite; /* Apply animation */
+}
+
+@keyframes border-animation {
+    0% {
+        border-color: rgba(0, 255, 0, 0.5); /* Start color and transparency */
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Optional: Add a glow effect */
+    }
+    50% {
+        border-color: rgba(0, 255, 0, 1); /* Middle color and transparency */
+        box-shadow: 0 0 20px rgba(0, 255, 0, 0.8); /* Optional: Enhance glow */
+    }
+    100% {
+        border-color: rgba(0, 255, 0, 0.5); /* End color and transparency */
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Optional: Restore glow */
+    }
+}

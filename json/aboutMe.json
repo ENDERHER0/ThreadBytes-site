@@ -1,86 +1,159 @@
 {
     "about_me": {
-      "basic_information": {
-        "full_name": "Carter William Wachtel",
-        "current_job_title": "Unemployed",
-        "company": "WachtelFabrication"
-      },
-      "contact_information": {
-        "email": "wachtelfabrication@gmail.com",
-        "personal_website": "no personal email added, placeholder for future update",
-        "social_media": {
-          "github": "https://github.com/ENDERHER0",
-          "linkedin": "https://www.linkedin.com/in/carter-wachtel-696a29291/"
-        }
-      },
-      "professional_summary": {
-        "summary": "I started my rabbit hole of technology around the time I was 8-9 years old. I got my first personal device, an iPod Touch Gen2. Having ADHD and a mind for wanting to see how things work, I took a look into the settings and found all sorts of different options. Taking this into account I had to know more. I'm 22 years old and have been learning the basics of everything in today's tech consumed world so I can be prepared for more."
-      },
-      "skills": {
-        "programming_languages": ["Python", "Java", "HTML5", "CSS", "R", "Xcode", "C++", "more..."],
-        "technologies": ["Numpy", "Numby", "Pandas", "Tensor", "TensorFlow", "Open-CV", "SpeechRecognition", "Requests", "BeautifulSoup4", "tkinter", "socket", "pybluez", "AI", "LLMs", "RegressionAlgorithms", "QuantumComputing", "pygame", "more..."],
-        "specializations": "I specialize in code/web surfing and debugging. I write scripts to analyze data visually in an appealing, information-conveying way. This includes but isn't limited to: colors, numbers, text, fonts, graphs, and pie charts."
-      },
-      "experience": [
-        {
-          "job_title": "Assistant Network Administrator",
-          "company": "High School",
-          "description": "Worked under the Head Network Administrator Mr. Black. Repaired student laptops and rewired the facility."
+		"basic_information": {
+			"full_name": "Carter William Wachtel",
+			"current_job_title": "Unemployed",
+			"company": "WachtelFabrication"
+		},
+		"contact_information": {
+			"email": "wachtelfabrication@gmail.com",
+			"personal_website": "no personal email added, placeholder for future update",
+			"social_media": {
+				"github": "https://github.com/ENDERHER0",
+				"linkedin": "https://www.linkedin.com/in/carter-wachtel-696a29291/"
+			}
+		},
+        "professional_summary": [
+            "Beginning - : I started my rabbit hole of technology around the time I was 8-9 years old.",
+            "My curiosity was piqued by the various gadgets and gizmos that surrounded me.",
+
+            "Youth - : I got my first personal device, an iPod Touch Gen2 for Christmas around that time.",
+            "Having ADHD and a mind for wanting to see how things work",
+            "I took a look into the settings and found all sorts of different options.",
+            "This sparked my interest in understanding the underlying technology.",
+            
+            "Teenage_Years - : During my teenage years, I delved deeper into the world of technology.",
+            "I began experimenting with basic programming and built my first simple websites.",
+            "My passion for tech grew as I explored different programming languages and tools.",
+            "I spent countless hours coding, dismantling old electronics, and reading tech blogs to stay updated on the latest trends.",
+            
+            "High_School - : In high school, I joined the computer club and participated in various tech competitions.",
+            "I also took advanced courses in computer science, which provided me with a solid foundation in coding and problem-solving.",
+            "My involvement in extracurricular activities, such as hackathons and coding boot camps, further solidified my interest and skills in technology.",
+            
+            "College - : I pursued a degree in Computer Science, where I honed my skills in software development, data structures, algorithms, and system design.",
+            "I completed several internships that provided hands-on experience in real-world projects.",
+            "My college years were marked by extensive project work, collaborative learning, and continuous exploration of emerging technologies.",
+           
+            "Recently - : Taking all this into account, I had to know more.",
+            "I'm 22 years old and have been learning the basics of everything in today's tech-consumed world so I can be prepared for more.",
+            "Recently, I have focused on developing my skills in AI, cloud computing, and cybersecurity.",
+            "My recent projects include developing AI models, setting up cloud infrastructures, and implementing security protocols.",
+         
+            "Current_Focus - : Currently, I am working on enhancing my expertise in artificial intelligence and machine learning.",
+            "I am also actively involved in open-source projects and enjoy collaborating with other tech enthusiasts to create innovative solutions.",
+            "My current work involves building machine learning models, contributing to open-source repositories, and mentoring budding developers.",
+        
+            "Future_Aspirations - : Looking ahead, I aim to leverage my diverse tech background to drive impactful projects that solve real-world problems.",
+            "My goal is to continuously learn and adapt to the ever-evolving tech landscape, ensuring that I remain at the forefront of technological advancements.",
+            "I aspire to lead groundbreaking projects, contribute to the tech community, and inspire others to pursue their passion in technology."
+        ],
+		"skills": {
+			"programming_languages": [
+				"Python",
+				"Java",
+				"HTML5",
+				"CSS",
+				"R",
+				"Xcode",
+				"C++",
+				"more..."
+			],
+			"technologies": [
+				"Numpy",
+				"Numby",
+				"Pandas",
+				"Tensor",
+				"TensorFlow",
+				"Open-CV",
+				"SpeechRecognition",
+				"Requests",
+				"BeautifulSoup4",
+				"tkinter",
+				"socket",
+				"pybluez",
+				"AI",
+				"LLMs",
+				"RegressionAlgorithms",
+				"QuantumComputing",
+				"pygame",
+				"more..."
+			],
+			"specializations": [
+                "I specialize in code/web surfing and debugging.", 
+                "I write scripts to analyze data visually in an appealing, information-conveying way.",
+                "This includes but isn't limited to: colors, numbers, text, fonts, graphs, and pie charts."
+            ]
         },
-        {
-          "job_title": "Line Technician",
-          "company": "Nissan",
-          "duration": "1 year",
-          "description": "Built Nissan Titans and Frontiers on the production line. Learned TIG welding, processed inventory assets, and managed supply replacement of parts and wearables."
-        },
-        {
-          "job_title": "Quick Lube Technician",
-          "company": "Patty Peck Honda",
-          "duration": "1 year",
-          "description": "Performed oil changes, brake fluid services, and learned critical information about vehicles. Ran 25-30 cars a day."
-        },
-        {
-          "job_title": "Oil Technician",
-          "company": "Lexus",
-          "description": "Performed oil changes, tire rotations, and managed cars in the lot and shop. Received a sign-on bonus but not the promised raise."
-        },
-        {
-          "job_title": "Technician Assistant",
-          "company": "Small Shop",
-          "duration": "5 months",
-          "description": "Worked inventory management, kept the shop clean and up to date on supplies, assisted technicians, and checked cars in and out."
-        }
-      ],
-      "education": {
-        "institution": "Western Governors University",
-        "degree": "Software Engineering"
-      },
-      "certifications": [
-        {
-          "certification": "Google IT Fundamentals",
-          "provider": "Coursera"
-        }
-      ],
-      "achievements": [
-        {
-          "title": "First in District's Congressional App Challenge",
-          "description": "Application was displayed in Washington D.C. at the Capital Building for a year."
-        }
-      ],
-      "personal_projects": [
-        {
-          "project_title": "Intro to Mechanical Engineering Course Project",
-          "description": "Created a scale model of the school grounds from scratch. Modeled buildings in Blender at a 350:1 scale. Display includes working lights and a rising flag."
-        }
-      ],
-      "hobbies_and_interests": [
-        {
-          "hobby": "Cruising",
-          "description": "I love to drive. Backroads or from a dig, you name it. Convoys to the beach with friends is one of my favorite things to do."
-        }
-      ],
-      "personal_statement": "\"Keep Moving Forward\" - Meet The Robinsons",
-      "languages_spoken": "N/A"
-    }
-  }
-  
+		"experience": [
+			{
+				"job_title": "Assistant Network Administrator",
+				"company": "High School",
+				"description": "Worked under the Head Network Administrator Mr. Black. Repaired student laptops and rewired the facility."
+			},
+			{
+				"job_title": "Line Technician",
+				"company": "Nissan",
+				"duration": "1 year",
+				"description": "Built Nissan Titans and Frontiers on the production line.", 
+                "skills": [
+                    "Learned TIG welding, processed inventory assets, and managed supply replacement of parts and wearables."
+                ]
+			},
+			{
+				"job_title": "Quick Lube Technician",
+				"company": "Patty Peck Honda",
+				"duration": "1 year",
+				"description": "Performed oil changes, brake fluid services, and learned critical information about vehicles."
+			},
+			{
+				"job_title": "Oil Technician",
+				"company": "Lexus",
+				"description": "Performed oil changes, tire rotations, and managed cars in the lot and shop."
+			},
+			{
+				"job_title": "Technician Assistant",
+				"company": "Small Shop",
+				"duration": "5 months",
+				"description": "Worked inventory management, kept the shop clean and up to date on supplies and assisted technicians."
+			}
+		],
+		"education": {
+			"institution": "Western Governors University",
+			"degree": "Software Engineering"
+		},
+		"certifications": [
+			{
+				"certification": "Google IT Fundamentals",
+				"provider": "Coursera"
+			}
+		],
+		"achievements": [
+			{
+				"title": "First in District's Congressional App Challenge",
+				"description": "Application was displayed in Washington D.C. at the Capital Building for a year."
+			}
+		],
+		"personal_projects": [
+			{
+				"project_title": "Intro to Mechanical Engineering Course Project",
+				"description": [ 
+                    "Created a scale model of the school grounds from scratch.", 
+                    "Modeled buildings in Blender at a 350:1 scale.",
+                    "Display includes working lights and a rising flag." 
+                ]
+			}
+		],
+		"hobbies_and_interests": [
+			{
+				"hobby": "Cruising",
+				"description": [
+                    "I love to drive. Backroads or from a dig, you name it.",
+                    "Convoys to the beach with friends is one of my favorite things to do."
+                ] 
+			}
+		],
+		"personal_statement": "\"Keep Moving Forward\" - Meet The Robinsons",
+		"languages_spoken": "N/A"
+	}
+}
