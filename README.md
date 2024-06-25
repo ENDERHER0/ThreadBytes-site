@@ -12,6 +12,14 @@ Explore the latest content on ThreadBytes, where I share in-depth articles, prod
 
 Don't forget to explore the mini apps section, where you can discover and try out some fun and useful applications that I've personally developed.
 
+## Support
+If you find my content useful, consider supporting me:
+
+- **DogeCoin:** D76wBcz2qtBbV6jwWwn7g2Ybsg8spyLeTe
+- **Bitcoin:** 1BN31SVvetiNtEcjLUjDYiweGfRi8oyjXF
+
+Your support assists me in enhancing applications, adding new features, and pursuing new projects. Thank you!
+
 ## Contact
 
 If you have any questions or just want to say hello, feel free to contact me at [wachtelfabrication@gmail.com](mailto:wachtelfabrication@gmail.com).
