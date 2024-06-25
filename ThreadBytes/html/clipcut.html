@@ -1,84 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Display Python Script with Prism.js</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
-<style>
-    body {
-        background-color: black;
-        color: white;
-        font-family: 'Courier New', Courier, monospace;
-        padding: 20px 10px;
-        text-align: center;
-    }
-    span[id="home"] a {
-        padding: 5px 20px;
-        font-size: 30px;
-        font-weight: 800;
-        color: green;
-        text-decoration: none;
-    }
-    h1 {
-        font-size: 2em;
-    }
-    #python-script {
-        background-color: #272822;
-        color: #f8f8f2;
-        padding: 5px;
-        margin: 10vw;
-        border-radius: 5px;
-        white-space: pre-wrap; /* Preserve formatting and wrap long lines */
-        overflow-x: auto; /* Enable horizontal scroll if needed */
-    }
-    .license {
-        padding: 5px 20px 50px 20px;
-    }
-</style>
-</head>
-<body>
-    <span id="home"><a href="../index.html">Home</a></span>
-    <h1>ClipCut</h1>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Display Python Script with Prism.js</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css" />
+		<style>
+			body {
+				display: flexbox;
+				background-color: black;
+				color: white;
+				font-family: "Courier New", Courier, monospace;
+				padding: 20px 10px;
+				text-align: center;
+			}
+			span[id="home"] a {
+				padding: 5px 20px;
+				font-size: 30px;
+				font-weight: 800;
+				color: green;
+				text-decoration: none;
+			}
+			h1 {
+				font-size: 2em;
+			}
+			#clipcut-img {
+                display: flex;
+                justify-content: center;
+				background-color: #272822;
+				color: #f8f8f2;
+				margin: 0 20vh;
+                padding: 5px 5px;
+				border-radius: 5px;
+			}
+            section[id="clipcut-frame"] {
+                display: flexbox;
+                box-sizing: border-box;
+                border-radius: 20px;
+                width: 600px;
+                height: 305px;
+                margin: 20px 10px;
+                padding: auto;
+            }
+            #clipcut-image img {
+                image-rendering: optimizeQuality;
+                image-resolution: from-image;
+                display: block;
+                border: solid 3px rgb(7, 127, 7);
+                background-color: black;
+                box-sizing: border-box;
+                border-radius: 15px;
+                max-height: 300px;
+                width: 100%;
+                max-width: 600px;
+            }
+            div[id="itch-page"] {
+                border: solid 4px rgb(13, 200, 97);
+                border-radius: 20px;
+                background: linear-gradient(0deg, #272822, #00c617);
+                display: flex;
+                margin: 10vh auto;
+                align-items: center;
+                width: -moz-fit-content;
+                width: -webkit-fit-content;
+                width: 40vw;
+                height: auto;
+                padding: 30px 40px;
+                animation: glowing-button 2s ease-in-out infinite;
+                transition: all .5s ease-in;
+            }
+            @keyframes glowing-button {
+                0% {
+                    box-shadow: 0 0 5px #00c617;
+                }
+                25% {
+                    box-shadow: 0 0 10px #058815;
+                    
+                }
+                50% {
+                    box-shadow: 0 0 20px #00c617;
+                }
+                75% {
+                    box-shadow: 0 0 15px #11751d;
+                    
+                }
+                100% {
+                    box-shadow: 0 0 10px #00c617;
+                }
 
-    <div id="python-script">
-        <pre><code id="python-code" class="language-python"></code></pre>
-    </div>
+                    
+            }
+			#python-script {
+                display: block;
+				background-color: #272822;
+				color: #f8f8f2;
+				margin: 5vw;
+				border-radius: 5px;
+				white-space: pre-wrap; /* Preserve formatting and wrap long lines */
+				overflow-x: auto; /* Enable horizontal scroll if needed */
+			}
+			.license {
+				padding: 5px 20px 50px 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<span id="home"><a href="../index.html">Home</a></span>
+		<h1>ClipCut</h1>
+		<div id="clipcut-img">
+            <section id="clipcut-frame">
+                <div id="clipcut-image">
+                    <img src="../images/ClipCut_Main.png" title="ClipCut-home" alt="Start page for ClipCut"></script>
+                </div>
+            </section>
+        </div>
+        <div id="itch-page">
+            <iframe title="itch-ClipCut" frameborder="0" src="https://itch.io/embed/2795084?border_width=3&amp;bg_color=000000&amp;fg_color=ffffff&amp;link_color=1e991a&amp;border_color=40eb37" width="556" height="171"><a href="https://wachtel-fabrication.itch.io/clipcut">ClipCut by Wachtel Fabrication</a></iframe>
+        </div>
+		<div id="python-script">
+            <h2>Python Script</h2>
+			<pre><code id="python-code" class="language-python"></code></pre>
+		</div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
-    <script>
-        // Fetch the content of the Python script and insert it into the <code> block
-        fetch('../scripts/python/clipcut-frame.py')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('python-code').textContent = data;
-                Prism.highlightElement(document.getElementById('python-code'));
-            })
-            .catch(error => {
-                console.error('Error fetching the Python script:', error);
-                document.getElementById('python-code').textContent = 'Error fetching the Python script. Please try again later.';
-            });
-    </script>
-    <details class="license">
-        <summary>GPL-3.0 License</summary>
-        <p>
-            This program is free software: you can redistribute it and/or modify
-            it under the terms of the GNU General Public License as published by
-            the Free Software Foundation, either version 3 of the License, or
-            (at your option) any later version.
-        </p>
-        <p>
-            This program is distributed in the hope that it will be useful,
-            but WITHOUT ANY WARRANTY; without even the implied warranty of
-            MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
-            General Public License for more details.
-        </p>
-        <p>
-            You should have received a copy of the GNU General Public License
-            along with this program. If not, see
-            <a href="https://www.gnu.org/licenses/gpl.html">https://www.gnu.org/licenses/gpl.html</a>.
-        </p>
-    </details>
-</body>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
+		<script>
+			// Fetch the content of the Python script and insert it into the <code> block
+			fetch("../python/clipcut.py")
+				.then((response) => response.text())
+				.then((data) => {
+					document.getElementById("python-code").textContent = data;
+					Prism.highlightElement(
+						document.getElementById("python-code")
+					);
+				})
+				.catch((error) => {
+					console.error("Error fetching the Python script:", error);
+					document.getElementById("python-code").textContent =
+						"Error fetching the Python script. Please try again later.";
+				});
+		</script>
+		<details class="license">
+			<summary>GPL-3.0 License</summary>
+			<p>
+				This program is free software: you can redistribute it and/or
+				modify it under the terms of the GNU General Public License as
+				published by the Free Software Foundation, either version 3 of
+				the License, or (at your option) any later version.
+			</p>
+			<p>
+				This program is distributed in the hope that it will be useful,
+				but WITHOUT ANY WARRANTY; without even the implied warranty of
+				MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+				General Public License for more details.
+			</p>
+			<p>
+				You should have received a copy of the GNU General Public
+				License along with this program. If not, see
+				<a href="https://www.gnu.org/licenses/gpl.html"
+					>https://www.gnu.org/licenses/gpl.html</a
+				>.
+			</p>
+		</details>
+	</body>
 </html>
